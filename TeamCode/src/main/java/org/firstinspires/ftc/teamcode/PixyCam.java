@@ -192,6 +192,7 @@ public class PixyCam extends I2cDeviceSynchDeviceWithParameters<I2cDeviceSynch, 
 
 
 
+    /// all the methods after this *besides the override ones* are total garbage
     public byte readPixyAtByteIndex(int i) {
         I2cDeviceSynch.ReadWindow readWindow = new I2cDeviceSynch.ReadWindow(1, 26, I2cDeviceSynch.ReadMode.REPEAT);
         this.deviceClient.setReadWindow(readWindow);
